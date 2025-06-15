@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>15 Puzzle Game</title>
+  
+  <link rel="stylesheet" href="GameLayout.css">
+</head>
+<body>
+  <h1>15 Puzzle Game</h1>
+ <p>To play the game, simply swap the tiles until they are in a numerical order. See how many moves it takes
+ for you to do it!! Click "Tutorial Game" to get an understanding of how the game works!</p>
+  <div>
+    <button onclick="newGame()">New Game</button>
+    <button onclick="tutorialGame()">Tutorial Game</button>
+    <p>Moves: <span id="moveCounter">0</span></p>
+    <p>Time: <span id="timer">0</span> seconds</p>
+  </div>
+
+  <table id="puzzleBoard"></table>
+
+  <script src="Game.js"></script>
+  
+  <button onclick="quitGame()">Quit Game</button>
+
+</body>
+</html>
