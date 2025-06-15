@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+td:not(.empty):hover {
+  background-color: #ffa;
+}
+
+td {
+  background-image: url('number_puzzle_game_image_no_borders.png');
+  background-size: 360px 360px;
+  background-repeat: no-repeat;
+}
+
+.tile1 { background-position: 0px 0px; }
+.tile2 { background-position: -90px 0px; }
+
+
+td {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #555;
+  font-size: 24px;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #87ceeb;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+td.empty {
+  background-color: white;
+  cursor: default;
+}
